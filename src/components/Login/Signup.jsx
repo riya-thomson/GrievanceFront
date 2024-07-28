@@ -20,7 +20,7 @@ const Signup = () => {
     return; // Exit function early if either field is empty
   }
    e.preventDefault()
-   axios.post('http://localhost:3005/add', input)
+   axios.post('https://grievanceback.onrender.com/add', input)
    .then((response) => {
      console.log(response.data)
      console.log("data added")
