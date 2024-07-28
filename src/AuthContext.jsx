@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    axios.get('http://localhost:3005/view', { params: { email: userId } })
+    axios.get('https://grievanceback.onrender.com/view', { params: { email: userId } })
       .then((response) => {
         const email = response.data.Email;
 
