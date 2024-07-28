@@ -1,0 +1,176 @@
+.body{
+    margin: 0px;
+    background: black;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+#box1{
+    width: 430px;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    background-image: url('../../assets/grey-hand.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: -100%;
+    left: 40%;
+    animation: anim 2s forwards, anim2 3s forwards 3s;
+}
+
+#box1:after{
+    content: '';
+    background-color:burlywood;
+    /* background-color: darksalmon; */
+    position: absolute;
+    width: 430px;
+    height: 560px;
+    background-image:url('../../assets/hand.png') ;
+    background-repeat: no-repeat;
+    left: 0px;
+    z-index: -1;
+}
+
+@keyframes anim {
+    from{
+        bottom: -100%;
+    }
+    to{
+        bottom: 0%;
+    }
+}
+
+@keyframes anim2{
+    from{
+        left: 40%;
+        width: 530px;
+    }
+    to{
+        width: 0px;
+        left: 70%;
+    }
+}
+
+#box2{
+    width: auto;
+    height:auto;
+    /* background-color: rgb(31, 229, 58); */
+    position:absolute;
+    top: 250px;
+    left: 100px;
+    overflow: hidden;
+}
+
+#menu li .login-btn{
+    border: 1px solid rgb(230, 69, 69); /* Green */
+
+}
+
+#title{
+    position: relative;
+    left: -100%;
+    animation: anim3 2s forwards 3s;
+    font-family: 'Bahnschrift Condensed';
+    color: black;
+    font-size: 7.8em;
+    font-weight:500 ;
+    line-height: 130px;
+}
+
+#para{
+    position: relative;
+    left: -100%;
+    animation: anim3 2s forwards 3s;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 1.2em;
+    font-weight:290 ;
+    /* line-height: 100px; */
+    width:600px ;
+}
+
+@keyframes anim3{
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0%;
+    }
+}
+
+#box3{
+    overflow: hidden;
+}
+
+#container{
+    width: 100%;
+    position: absolute;
+    top: -100%;
+    background-color: transparent;
+    animation: anim4 2s forwards 2.5s;
+}
+
+#logo{
+    float: left;
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+#logo img{
+    width: 50px;
+}
+
+#menu{
+    font-family: 'Bahnschrift Condensed';
+    font-size: 14px;
+    color: black;
+    letter-spacing: 2px;
+    margin-right: 150px;
+    margin-top: 30px;
+    float: right;
+}
+
+#menu ul{
+    list-style: none;
+}
+
+#menu ul li{
+    display: inline-block;
+    margin-left: 100px;
+}
+
+@keyframes anim4{
+    from{
+        top: -100%;
+    }
+    to{
+        top: 0%;
+    }
+}
+
+@keyframes anim5{
+    from{
+        top: -100%;
+    }
+    to{
+        top: 0%;
+    }
+}
+
+#box4{
+    width: 350px;
+    /* background-color: black; */
+    height: 450px;
+    position: absolute;
+    top: -100%;
+    left: 62%;
+    background-image:url('../../assets/handrev-crop.png') ;
+    background-repeat: no-repeat;
+    animation: anim 2s forwards, anim5 3s forwards 3s;
+}
+

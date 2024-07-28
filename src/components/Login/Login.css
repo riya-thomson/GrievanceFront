@@ -1,0 +1,88 @@
+.introblock {
+    background: rgb(228 35 19);
+    max-width: 960px;
+    padding: 30px;
+    margin: 50px auto;
+  }
+  
+  .introblock h1 {
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    letter-spacing: 0;
+    color: white;
+  }
+  
+  .introblock p {
+    font-weight: 300;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 0 25%;
+    line-height: 1.6;
+  }
+  
+  .login-fields {
+    text-align: center;
+    margin: 0 auto 20px;
+    max-width: 400px;
+    width: 100%;
+    line-height: 1.5;
+  }
+  
+  .login-fields button {
+    width: 100%;
+    background-color: #e42313;
+    min-height: 50px;
+    color: black !important;
+  }
+
+  @keyframes anim6 {
+    from {
+        left: -100%; /* Start off-screen to the left */
+    }
+    to {
+        left: 0%; /* End at the original position */
+    }
+}
+
+#box6 {
+    /* width: 1527px; */
+    width: 1100px;
+    background-color:#cba067;
+    height: 470px;
+    position: absolute;
+    top: 16%; /* Center vertically */
+    left: -100%; /* Start off-screen to the left */
+    background-repeat: no-repeat;
+    animation: anim6 2s forwards; /* Apply the left-to-right animation */
+    z-index: -1; /* Position it below all other elements */
+}
+
+@keyframes anim7 {
+    from {
+        right: -100%; /* Start off-screen to the left */
+    }
+    to {
+        right: 0%; /* End at the original position */
+    }
+}
+
+#box7 {
+    /* width: 1527px; */
+    width: 1100px;
+    background-color:#cba067;
+    height: 470px;
+    position: absolute;
+    top: 16%; /* Center vertically */
+    right: -100%; /* Start off-screen to the left */
+    background-repeat: no-repeat;
+    animation: anim7 2s forwards; /* Apply the left-to-right animation */
+    z-index: -1; /* Position it below all other elements */
+}
+
+
+
+  
+  
