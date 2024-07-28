@@ -42,14 +42,14 @@ const Form = () => {
         console.log("Form submitted!");
 
          // Send email notification about acceptance
-       axios.post('http://localhost:3005/send-email', {
+       axios.post('https://grievanceback.onrender.com/send-email', {
         recipientEmail: input.Email,
         subject: 'Grievance Form Has Been Submitted.',
         text: 'One user submitted the Grievance form.'
       });
 
         // Correctly sending the input state as part of the request body
-        axios.post("http://localhost:3005/form", input)
+        axios.post("https://grievanceback.onrender.com/form", input)
             .then((res) => {
                 console.log(res);
                 alert(res.data.message); // Displaying the success message
