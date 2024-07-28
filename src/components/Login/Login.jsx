@@ -43,7 +43,7 @@ const Login = () => {
     }
 
     try {
-      const response = await axios.get('http://localhost:3005/view', { params: { Email: input.Email } });
+      const response = await axios.get('https://grievanceback.onrender.com/view', { params: { Email: input.Email } });
       const userData = response.data;
 
       if (userData.Email === input.Email && userData.Password === input.Password) {
